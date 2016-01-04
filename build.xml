@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="XoriantSurveyPortal">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../Softwares/eclipse-jee-kepler-SR2-win32-x86_64/eclipse"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <path id="Web App Libraries.libraryclasspath">
+        <pathelement location="WebContent/WEB-INF/lib/aopalliance-repackaged-2.4.0-b09.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/asm-debug-all-5.0.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/com.mysql.jdbc_5.1.5.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/genson-1.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/hk2-api-2.4.0-b09.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/hk2-locator-2.4.0-b09.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/hk2-utils-2.4.0-b09.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/javaee.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/javassist-3.18.1-GA.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/javax.annotation-api-1.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/javax.inject-2.4.0-b09.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/javax.servlet-api-3.0.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/javax.ws.rs-api-2.0.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jaxb-api-2.2.7.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jersey-client.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jersey-common.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jersey-container-servlet-core.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jersey-container-servlet.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jersey-guava-2.16.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jersey-json.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jersey-media-jaxb.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jersey-server.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jstl-api-1.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jstl-impl-1.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/log4j-1.2.17.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/log4j-api-2.0-rc2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/log4j-core-2.0-rc2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/mockito-all-1.9.5.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/org.apache.commons.dbcp.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/org.osgi.core-4.2.0.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/osgi-resource-locator-1.0.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/persistence-api-1.0.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/validation-api-1.1.0.Final.jar"/>
+    </path>
+    <path id="EAR Libraries.libraryclasspath"/>
+    <path id="JUnit 4.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.junit_4.11.0.v201303080030/junit.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.hamcrest.core_1.3.0.v201303031735.jar"/>
+    </path>
+    <path id="XoriantSurveyPortal.classpath">
+        <pathelement location="build/classes"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <pathelement location="WebContent/WEB-INF/lib/hk2-api-2.4.0-b09.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/hk2-locator-2.4.0-b09.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/hk2-utils-2.4.0-b09.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/javax.annotation-api-1.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/javax.inject-2.4.0-b09.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/javax.ws.rs-api-2.0.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jersey-client.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jersey-common.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jersey-container-servlet-core.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jersey-server.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/osgi-resource-locator-1.0.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/validation-api-1.1.0.Final.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/aopalliance-repackaged-2.4.0-b09.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/asm-debug-all-5.0.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/javassist-3.18.1-GA.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/javax.servlet-api-3.0.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jaxb-api-2.2.7.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jersey-container-servlet.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jersey-guava-2.16.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jersey-media-jaxb.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/org.osgi.core-4.2.0.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/persistence-api-1.0.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jersey-json.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/genson-1.2.jar"/>
+        <path refid="JUnit 4.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="build/classes"/>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="resources">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="build/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <src path="resources"/>
+            <classpath refid="XoriantSurveyPortal.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="EmployeeResourceTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.xoriant.resourcestest.EmployeeResourceTest" todir="${junit.output.dir}"/>
+            <classpath refid="XoriantSurveyPortal.classpath"/>
+        </junit>
+    </target>
+    <target name="EmployeeSurveyResourceTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.xoriant.resourcestest.EmployeeSurveyResourceTest" todir="${junit.output.dir}"/>
+            <classpath refid="XoriantSurveyPortal.classpath"/>
+        </junit>
+    </target>
+    <target name="SurveyResourcesTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.xoriant.resourcestest.SurveyResourcesTest" todir="${junit.output.dir}"/>
+            <classpath refid="XoriantSurveyPortal.classpath"/>
+        </junit>
+    </target>
+    <target name="TestConnectionFactory">
+        <java classname="com.xoriant.test.TestConnectionFactory" failonerror="true" fork="yes">
+            <classpath refid="XoriantSurveyPortal.classpath"/>
+        </java>
+    </target>
+    <target name="TestDao">
+        <java classname="com.xoriant.test.TestDao" failonerror="true" fork="yes">
+            <classpath refid="XoriantSurveyPortal.classpath"/>
+        </java>
+    </target>
+    <target name="EmployeeTestSuite">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.xoriant.test.suite.EmployeeTestSuite" todir="${junit.output.dir}"/>
+            <classpath refid="XoriantSurveyPortal.classpath"/>
+        </junit>
+    </target>
+    <target name="SurveyTestSuite">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.xoriant.test.suite.SurveyTestSuite" todir="${junit.output.dir}"/>
+            <classpath refid="XoriantSurveyPortal.classpath"/>
+        </junit>
+    </target>
+    <target name="EmployeeSurveyTestSuite">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.xoriant.test.suite.EmployeeSurveyTestSuite" todir="${junit.output.dir}"/>
+            <classpath refid="XoriantSurveyPortal.classpath"/>
+        </junit>
+    </target>
+    <target name="AllTests">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.xoriant.test.suite.AllTests" todir="${junit.output.dir}"/>
+            <classpath refid="XoriantSurveyPortal.classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>
